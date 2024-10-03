@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Reserve a Link Type</h1>
+        <form id="reservationForm">
+            <label for="linkType">Choose a link type:</label>
+            <select id="linkType">
+                <option value="Posts">Posts</option>
+                <option value="iti">iti</option>
+                <option value="Important">Important</option>
+                <option value="Cources">Cources</option>
+            </select>
+
+            <label for="link-description">Enter description :</label>
+            <input type="text" id="link-description" placeholder="ex: mohamed moshrif's post" required>
+
+            <label for="linkUrl">Enter the URL:</label>
+            <input type="text" id="linkUrl" placeholder="https:// Basal.com" required>
+
+            <button type="submit">Reserve Link</button>
+        </form>
+
+        <div id="reservedLinks">
+            <h2>Reserved Links:</h2>
+            <ul id="linkList"></ul>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
